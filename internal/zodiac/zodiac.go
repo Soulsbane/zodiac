@@ -10,11 +10,11 @@ var (
 )
 
 type Sign struct {
-	animal     string
-	yinYang    string
-	element    string
-	stemBranch string
-	year       int
+	Animal     string
+	YinYang    string
+	Element    string
+	StemBranch string
+	Year       int
 }
 
 func GetSign(year int) Sign {
@@ -24,11 +24,11 @@ func GetSign(year int) Sign {
 	stem := year % 10
 	branch := year % 12
 
-	sign.animal = animalString[branch]
-	sign.yinYang = stemYYString[stem%2]
-	sign.element = elementString[stem/2]
-	sign.stemBranch = string([]rune{stemCh[stem], branchCh[branch]})
-	sign.year = year%60 + 1
+	sign.Animal = animalString[branch]
+	sign.YinYang = stemYYString[stem%2]
+	sign.Element = elementString[stem/2]
+	sign.StemBranch = string([]rune{stemCh[stem], branchCh[branch]})
+	sign.Year = year%60 + 1
 
 	return sign
 }
