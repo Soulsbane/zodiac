@@ -1,10 +1,10 @@
 package zodiac
 
 var (
-	animals = []string{"Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse",
+	animals = [...]string{"Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse",
 		"Goat", "Monkey", "Rooster", "Dog", "Pig"}
-	yinYang  = []string{"Yang", "Yin"}
-	elements = []string{"Wood", "Fire", "Earth", "Metal", "Water"}
+	yinYang  = [...]string{"Yang", "Yin"}
+	elements = [...]string{"Wood", "Fire", "Earth", "Metal", "Water"}
 	stems    = []rune("甲乙丙丁戊己庚辛壬癸")
 	branches = []rune("子丑寅卯辰巳午未申酉戌亥")
 )
